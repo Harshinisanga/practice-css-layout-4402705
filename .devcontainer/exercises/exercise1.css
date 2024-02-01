@@ -1,18 +1,32 @@
 .container {
-}
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header nav"
+  "main main main" 
+  "footer footer footer";
+  gap: 10px;
+ }
 
 .item-1 {
-  border: 1px solid green;
+ border: 1px solid green;
+ grid-area: header;
+
 }
 
 .item-2 {
-  border: 1px solid blue;
+ border: 1px solid blue;
+ grid-area: nav;
 }
 
 .item-3 {
-  border: 1px solid yellow;
+ border: 1px solid yellow;
+ grid-area: main;
 }
 
 .item-4 {
-  border: 1px solid pink;
+ border: 1px solid pink;
+ grid-area: footer;
 }
